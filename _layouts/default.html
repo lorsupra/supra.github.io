@@ -9,45 +9,51 @@
 
 <body>
 
-<div class="prompt">
-  <span class="user">$</span>
-  <a href="/" class="cmd-link">./supra</a>
-  <span class="cursor">▊</span>
-</div>
+<header class="terminal-header">
 
-{% if page.url != "/" %}
-<div class="breadcrumb">
-  <span class="user">$</span>
-  <span class="cmd">cd</span>
-  <span class="path">
-    {{ page.url
-       | remove: '.html'
-       | replace_first: '/', '~/'
-    }}
-  </span>
-</div>
-{% endif %}
+  <!-- Run binary -->
+  <div class="prompt">
+    <span class="user">$</span>
+    <a href="/" class="cmd-link">./supra</a>
+    <span class="cursor">▊</span>
+  </div>
 
+  <!-- Change directory (not on home) -->
+  {% unless page.url == "/" %}
+  <div class="breadcrumb">
+    <span class="user">$</span>
+    <span class="cmd">cd</span>
+    <span class="path">
+      {{ page.url
+         | remove: '.html'
+         | replace_first: '/', '~/'
+      }}
+    </span>
+  </div>
+  {% endunless %}
+
+  <!-- Program output -->
   <div class="boot">
 
-  {% if page.page_type == "home" %}
-    <div>[+] initializing environment</div>
-    <div>[+] system ready</div>
+    {% if page.page_type == "home" %}
+      <div>[+] initializing environment</div>
+      <div>[+] system ready</div>
 
-  {% elsif page.page_type == "index" %}
-    <div>[+] loading writeups</div>
-    <div>[+] enumerating challenges</div>
+    {% elsif page.page_type == "index" %}
+      <div>[+] loading writeups</div>
+      <div>[+] enumerating challenges</div>
 
-  {% elsif page.page_type == "writeup" %}
-    <div>[+] loading writeup</div>
-    <div>[+] rendering analysis</div>
+    {% elsif page.page_type == "writeup" %}
+      <div>[+] loading writeup</div>
+      <div>[+] rendering analysis</div>
 
-  {% else %}
-    <div>[+] ready</div>
-  {% endif %}
+    {% else %}
+      <div>[+] ready</div>
+    {% endif %}
 
-</div>
+  </div>
 
+</header>
 
 <main class="terminal-content">
   {{ content }}
