@@ -29,10 +29,25 @@
 {% endif %}
 
   <div class="boot">
-    <div>[+] loading writeups...</div>
+
+  {% if page.page_type == "home" %}
+    <div>[+] initializing environment</div>
+    <div>[+] system ready</div>
+
+  {% elsif page.page_type == "index" %}
+    <div>[+] loading writeups</div>
+    <div>[+] enumerating challenges</div>
+
+  {% elsif page.page_type == "writeup" %}
+    <div>[+] loading writeup</div>
+    <div>[+] rendering analysis</div>
+
+  {% else %}
     <div>[+] ready</div>
-  </div>
-</header>
+  {% endif %}
+
+</div>
+
 
 <main class="terminal-content">
   {{ content }}
