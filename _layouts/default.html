@@ -19,9 +19,11 @@
 <div class="breadcrumb">
   <span class="path">
   {{ page.url
-     | remove: '.html'
-     | replace_first: '/', '~/'
-  }}
+   | remove: '.html'
+   | downcase
+   | replace_first: '/', '~/'
+}}
+
 </span>
 
 </div>
