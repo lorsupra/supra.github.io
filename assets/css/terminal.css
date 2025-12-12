@@ -20,6 +20,30 @@ body {
   text-decoration: underline;
 }
 
+/* Blinking cursor */
+.cursor {
+  margin-left: 4px;
+  animation: blink 1.1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Breadcrumb shell path */
+.breadcrumb {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #7fdc00;
+}
+
+.breadcrumb .path {
+  color: #6aff00;
+}
+
+
 /* Links */
 a {
   color: #58d1ff; /* terminal cyan */
