@@ -33,18 +33,21 @@ body {
   100% { opacity: 1; }
 }
 
-/* Terminal-style wrapped code blocks */
+/* Code blocks (terminal-style, wrapped, no scrollbar) */
 pre {
-  white-space: pre-wrap;       /* preserve formatting but allow wrapping */
-  word-wrap: break-word;       /* legacy */
-  overflow-wrap: anywhere;     /* modern browsers */
+  background: #050805;
+  padding: 1rem;
+  border-left: 3px solid #9fef00;
+
+  white-space: pre-wrap;       /* wrap long lines */
+  overflow-wrap: anywhere;     /* break long strings */
+  word-break: break-word;
+
   overflow-x: hidden;          /* kill horizontal scrollbar */
 }
 
-code {
+pre code {
   white-space: pre-wrap;
-  word-wrap: break-word;
-  overflow-wrap: anywhere;
 }
 
 /* Breadcrumb command */
