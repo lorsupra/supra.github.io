@@ -15,14 +15,19 @@
   <span class="cursor">▊</span>
 </div>
 
-{% if page.path != "index.md" %}
+{% if page.url != "/" %}
 <div class="breadcrumb">
+  <span class="user">$</span>
+  <span class="cmd">cd</span>
   <span class="path">
-  {{ page.url
-   | remove: '.html'
-   | downcase
-   | replace_first: '/', '~/'
-}}
+    {{ page.url
+       | remove: '.html'
+       | replace_first: '/', '~/'
+    }}
+  </span>
+</div>
+{% endif %}
+
 
 </span>
 
