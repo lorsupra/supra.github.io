@@ -1,3 +1,8 @@
+---
+layout: default
+title: Intro To Web 1
+page_type: writeup
+---
 # Multi-Part Web Challenge – Client-Side Security Bypass
 
 **By: supra**
