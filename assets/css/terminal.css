@@ -62,7 +62,6 @@ pre code,
   white-space: pre-wrap !important;
 }
 
-/* Remove width constraints GitHub injects */
 .highlight,
 .highlighter-rouge {
   max-width: 100%;
@@ -154,39 +153,39 @@ h1, h2, h3 {
 }
 
 /* =====================
-   Lists
+   Lists (GLOBAL RESET)
    ===================== */
 ul {
   list-style: none;
   padding-left: 1rem;
-}
-
-ul li::before {
-  content: "▸ ";
-  color: #6aff00;
+  margin: 0;
 }
 
 /* =====================
-   Tight index list spacing (kramdown structure: li > p)
+   Index / challenge lists (kramdown: li > p)
    ===================== */
-
-.terminal-content ul {
-  margin: 0;
-  padding-left: 1rem;
+.terminal-content ul li {
+  display: flex;
+  align-items: flex-start;
+  margin: 0.3rem 0;
 }
 
-.terminal-content ul li {
-  margin: 0.25rem 0;          /* controls spacing between entries */
+.terminal-content ul li::before {
+  content: "▸ ";
+  color: #6aff00;
+  margin-right: 0.5rem;
+  line-height: 1.35;
 }
 
 .terminal-content ul li > p {
-  margin: 0;                  /* kill the big paragraph margins */
-  line-height: 1.35;          /* tighter vertical rhythm */
+  margin: 0;
+  line-height: 1.35;
+  flex: 1;
 }
 
 .terminal-content ul li > p em {
-  display: inline-block;
-  margin-top: 0.15rem;        /* small separation from title */
+  display: block;
+  margin-top: 0.15rem;
   color: #7fdc00;
   font-style: italic;
 }
