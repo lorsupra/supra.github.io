@@ -24,6 +24,8 @@ A collection of THM challenges, rooms, and practice labs.
 
 Walkthroughs for HTB machines, challenges, and retired boxes.
 
+[HTB CTF Tryout 2025](HackTheBox/CTF-Tryout-2025/)
+
 ---
 
 ## 🏴‍☠️ CSCG (Cyber Security Challenge Germany)
