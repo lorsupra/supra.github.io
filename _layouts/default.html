@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/terminal.css">
+</head>
+
+<body>
+
+<header class="terminal-header">
+  <div class="prompt">
+    <span class="user">$</span>
+    <span class="cmd">./supra</span>
+  </div>
+  <div class="boot">
+    <div>[+] loading writeups...</div>
+    <div>[+] initializing targets</div>
+    <div>[+] ready</div>
+  </div>
+</header>
+
+<main class="terminal-content">
+  {{ content }}
+</main>
+
+<footer class="terminal-footer">
+  <span>supra@ctf ~ %</span>
+</footer>
+
+</body>
+</html>
