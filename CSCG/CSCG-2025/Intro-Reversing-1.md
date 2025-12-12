@@ -1,3 +1,8 @@
+---
+layout: default
+title: Intro To Reversing
+page_type: writeup
+---
 # Intro to Reversing 1 – ELF x86_64 Static Analysis
 
 **By: supra**
