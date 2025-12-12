@@ -9,13 +9,20 @@ body {
 }
 
 /* Links */
+/* Links */
 a {
-  color: #b6ff00;
+  color: #58d1ff; /* terminal cyan */
   text-decoration: none;
+  border-bottom: 1px dotted #58d1ff;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #9ae6ff;
+  border-bottom: 1px solid #9ae6ff;
+}
+
+a:visited {
+  color: #4fb3d8;
 }
 
 /* Header */
