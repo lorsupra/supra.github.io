@@ -1,3 +1,9 @@
+---
+layout: default
+title: Flaig Checker
+page_type: writeup
+---
+
 # CSCG 2025: flaig-checker – LLM Memory Extraction
 
 **By: supra**
