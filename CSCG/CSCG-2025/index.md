@@ -28,6 +28,6 @@ Each entry links to the full writeup located in this directory.
 - [Intro Forensics 1](Intro-Forensics-1)  
   *Session token extraction from PCAP and reuse for web authentication.*
 
-- [Flag Checker](Flag-Checker)  
+- [Flaig Checker](Flaig-Checker)  
   *Model memorization leak in a fine-tuned LLM served via Ollama.*
 
