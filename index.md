@@ -35,7 +35,3 @@ Writeups, notes, and solutions for CSCG challenges.
 [CSCG 2025](CSCG/CSCG-2025/)
 
 ---
-
-## 🎄 Advent of Cyber (Coming Soon)
-
-Writeups for **Advent of Cyber** will be published once the event ends.
