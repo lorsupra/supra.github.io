@@ -8,7 +8,18 @@ body {
   line-height: 1.7;
 }
 
-/* Links */
+/* Terminal command link */
+.cmd-link {
+  color: #9fef00;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cmd-link:hover {
+  color: #c7ff3d;
+  text-decoration: underline;
+}
+
 /* Links */
 a {
   color: #58d1ff; /* terminal cyan */
