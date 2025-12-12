@@ -1,3 +1,9 @@
+---
+layout: default
+title: Intro To Forensics
+page_type: writeup
+---
+
 # Token-Based Login Service – Network Forensics & Session Hijacking
 
 **By: supra**
