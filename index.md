@@ -16,7 +16,7 @@ New content is added regularly.
 ## 🧪 TryHackMe Writeups
 
 A collection of THM challenges, rooms, and practice labs.  
-
+[TryHackMe Challenges](TryHackMe/Challenges/)
 
 ---
 
