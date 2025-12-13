@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blessed
+title: Blessed - Crypto
 page_type: writeup
 ---
 # HTB: Blessed – BLS Signature Rogue Key Attack & Lattice Cryptanalysis
