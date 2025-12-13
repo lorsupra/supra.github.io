@@ -16,5 +16,8 @@ Each entry links to the full writeup located in this directory.
 - [Crocc Crew](Crocc-Crew)  
   *Guest SMB access to Kerberos delegation abuse for full domain compromise.*
 
+- [Soupedecode 01](Soupedecode-01)  
+  *Guest SMB enumeration to Kerberoasting and machine account abuse.*
+
 
 
