@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Crocc Crew
+title: Crocc Crew - AD
 page_type: writeup
 ---
 # HTB: CroccCrew – Kerberoasting & Constrained Delegation Abuse
