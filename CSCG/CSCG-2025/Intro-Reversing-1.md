@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Intro To Reversing
+title: Intro To Reversing - Rev
 page_type: writeup
 ---
 # Intro to Reversing 1 – ELF x86_64 Static Analysis
