@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Not A Democratic Election
+title: Not A Democratic Election - Blockchain
 page_type: writeup
 ---
 
